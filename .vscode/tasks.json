@@ -8,7 +8,7 @@
     },
     "tasks": [
         {
-            "label": "clean-up",
+            "label": "clean",
             "type": "shell",
             "options": {
                 "cwd": "${workspaceRoot}"
@@ -33,7 +33,7 @@
                 "-DCMAKE_BUILD_TYPE=Debug",
                 ".."
             ],
-            "dependsOn" : "clean-up"
+            "dependsOn" : "clean"
         },
         {
             "label": "make",
